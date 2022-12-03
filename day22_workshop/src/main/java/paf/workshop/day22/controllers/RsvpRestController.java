@@ -37,7 +37,6 @@ public class RsvpRestController {
         for(Rsvp rsvp:rsvplist){
             builder.add(rsvp.toJSON());
         }
-
         return ResponseEntity.ok(builder.build().toString());
     }
 
@@ -97,9 +96,7 @@ public class RsvpRestController {
         if(rsvpsvc.updateRSVP(rsvp) > 0)
         {   return ResponseEntity.status(201).body("Updated rsvp for " + email);    }
        
-
         return ResponseEntity.status(HttpStatus.METHOD_NOT_ALLOWED).body("Not Updated");
-
     }
 
 
