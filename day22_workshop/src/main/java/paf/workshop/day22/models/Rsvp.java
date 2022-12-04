@@ -35,7 +35,11 @@ public class Rsvp {
         rsvp.setEmail(rs.getString("Email"));
         rsvp.setPhone(rs.getString("Phone"));
         rsvp.setDate(rs.getString("Confirmation_date"));
-        rsvp.setComments(rs.getString("Comments"));
+        
+        if(rs.getString("Comments") == null)
+        {   rsvp.setComments("NA");     }
+        else
+            rsvp.setComments(rs.getString("Comments"));
 
         return rsvp;
     }
