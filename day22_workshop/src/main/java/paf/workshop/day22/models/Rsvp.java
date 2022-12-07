@@ -36,9 +36,9 @@ public class Rsvp {
         rsvp.setPhone(rs.getString("Phone"));
         rsvp.setDate(rs.getString("Confirmation_date"));
         
-        if(rs.getString("Comments") == null)
-        {   rsvp.setComments("NA");     }
-        else
+        // if(rs.getString("Comments") == null)
+        // {   rsvp.setComments("NA");     }
+        // else
             rsvp.setComments(rs.getString("Comments"));
 
         return rsvp;
