@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>To-Do List</h2>
+
+    <form action="/addTask">
+        <h4>Username</h4>
+        <input type="text" name="username">
+
+        <table>
+            <tr>
+                <td>Description:</td>
+                <td>Priority:</td>
+                <td>Due Date:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="description"></td>
+                <td>
+                    <select name="priority">
+                        <option value="zero">zero</option>
+                        <option value="low">low</option>
+                        <option value="medium">medium</option>
+                        <option value="high">high</option>
+                        <option value="urgent">urgent</option>
+                    </select>
+                </td>
+                <td><input type="date" name="dueDate"></td>
+                <td></td>
+            </tr>
+        </table>
+        <input type="submit" value="ADD">
+    </form>
+    
+    
+
+</body>
+</html>

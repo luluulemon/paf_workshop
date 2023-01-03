@@ -110,7 +110,7 @@ public class GameReviewRestController {
         JsonReader reader = Json.createReader(new StringReader(reviewDoc.toJson()));
         JsonObject fullReview = reader.readObject();
 
-        // How to add new attribute to JsonObject
+        // **Not possible to change JsonObject, it is immutable
         //fullReview.put("timestamp", Json.createValue(System.currentTimeMillis()));
 
         
